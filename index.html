@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jack Karakashian - Consultant Portfolio</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 10%;">
+            <!-- Logo on the left -->
+            <img src="images/logo.png" alt="Logo" width="150" height="150"> 
+
+            <!-- Header Text -->
+            <div style="text-align: center;">
+                <h1>Jack Karakashian</h1>
+                <h3>Student | Entrepreneur | Data Driven</h3>
+            </div>
+
+            <!-- Social Media Icons on the right -->
+            <div class="social-media" style="text-align: right;">
+                <a href="mailto:your.email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blog">Blog</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+            <!-- Headshot image -->
+            <img src="images/Headshot.jpeg" alt="Headshot of Jack" width="600" height="600">
+
+
+            <!-- About Text -->
+            <h3>Hi, I'm Jack, a third-year Finance and Information Systems student at the University of Maryland. My father used to tell me "Change is the only constant..." which is why I spend every day doing what I can to make my change on the world. Above all, I am a risk-taker. To be bold is to embrace courage in the face of uncertainty, to take risks and stand firm in your convictions, even when the path ahead is unclear or challenging. Taking risks is woven into the fabric of who I am, and it drives me to pursue challenges others might shy away from. So, to the companies and dreamers of America—are you bold? Do you have the vision and the courage to recruit someone who’s destined to make an impact on your team?</h3>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <h3>Project 1: Data Analysis for XYZ Company</h3>
+            <p>Utilized advanced statistical methods to optimize supply chain management and improve overall business performance. <a href="#">Read more</a></p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Project 2: Business Strategy for ABC Corp</h3>
+            <p>Developed a comprehensive business strategy plan to enhance market share and improve financial stability. <a href="#">Read more</a></p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3><a href="#">The Future of Business Consulting</a></h3>
+            <p>Explore the evolving role of consultants in today's fast-paced business world and how technology is reshaping the industry.</p>
+        </div>
+        <div class="blog-post">
+            <h3><a href="#">Data-Driven Decision Making</a></h3>
+            <p>Learn about the importance of data analytics in making informed business decisions and how it can lead to long-term success.</p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can download my resume <a href="resume.pdf" download>here</a>.</p>
+        <div class="resume-video">
+            <h3>Watch My Resume Video</h3>
+            <video controls>
+                <source src="resume-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Contact Section (moved to bottom) -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Jack Karakashian. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
