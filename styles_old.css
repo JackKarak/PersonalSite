@@ -1,0 +1,409 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #023766;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+nav a {
+    color: #0074D9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #005bb5;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 10%;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0074D9;
+    padding-bottom: 0.5rem;
+}
+
+/* Intro Section */
+#pillarIntro {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    text-align: left;
+    max-width: 600px;
+}
+
+blockquote {
+    border-left: 4px solid #0074D9;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+.headshot {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pillars Section */
+#pillars {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.pillars-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pillar {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pillar-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.company-banner {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff; /* Optional */
+    display: flex;
+    align-items: center;
+  }
+  
+  .scrolling-companies {
+    display: flex;
+    animation: scroll 40s linear infinite; /* Adjusted duration */
+  }
+  
+  .scrolling-companies img {
+    height: 150px; /* Adjust as needed */
+    width: auto;
+    margin-right: 15px; /* Gap between logos */
+  }
+  
+  /* Animation for smooth scrolling */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Move exactly half the width */
+    }
+  }
+  
+  
+  
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Portfolio Section Styling */
+#portfolio {
+    padding: 2em;
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+/* Individual Portfolio Box */
+.portfolio-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set a consistent width */
+    min-height: 350px; /* Ensure a minimum height for each box */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Image */
+.portfolio-box img {
+    width: 100%;
+    height: 200px;  /* Set a fixed height for all images */
+    object-fit: contain;  /* Ensures the entire image is contained within the box without distortion */
+    object-position: center;  /* Ensures the image stays centered */
+}
+
+/* Portfolio Content */
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Align content to the top */
+    height: 100%;  /* Ensure content fills the full height of the box */
+    padding: 1em;
+}
+
+.portfolio-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.portfolio-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1em;  /* Space between text and "Read more" */
+}
+
+/* Flex to push 'Read more' to the bottom */
+.portfolio-content .spacer {
+    flex-grow: 1;  /* This creates the excess space */
+}
+
+/* Read more link styling */
+.portfolio-content a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto; /* This will push the link to the bottom */
+}
+
+.portfolio-content a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Blog Section */
+#blog p, .blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.blog-post a {
+    color: #0074D9;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+    color: #005bb5;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+/* Social Media Links */
+.social-media a {
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #005bb5;
+}
+
+/* Resume Section */
+
+.resume-video {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.resume-video video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 1.5rem 5%;
+    }
+
+    nav {
+        margin: 1rem 0;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+}

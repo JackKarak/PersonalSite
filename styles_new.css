@@ -247,23 +247,69 @@ body {
     filter: grayscale(0%);
 }
 
-/* Experience Section */
-.experience-timeline {
-    max-width: 900px;
-    margin: 0 auto;
+/* Pillars Section */
+.pillars-intro {
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-.experience-item {
+.pillars-quote {
+    margin-bottom: 2rem;
+}
+
+.pillars-quote h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.pillars-quote cite {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.pillars-acronym {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pillars-acronym span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent);
+    border-radius: 25px;
+    transition: var(--transition);
+}
+
+.pillars-acronym span:hover {
+    background-color: var(--accent);
+    color: var(--text-primary);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.pillar-card {
     background: var(--bg-primary);
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 2rem;
-    margin-bottom: 2rem;
+    text-align: center;
     transition: var(--transition);
     position: relative;
+    overflow: hidden;
 }
 
-.experience-item::before {
+.pillar-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -275,92 +321,32 @@ body {
     transition: var(--transition);
 }
 
-.experience-item:hover {
-    transform: translateY(-5px);
+.pillar-card:hover {
+    transform: translateY(-10px);
     border-color: var(--accent);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.experience-item:hover::before {
+.pillar-card:hover::before {
     opacity: 1;
 }
 
-.experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.pillar-icon {
+    width: 60px;
+    height: 60px;
     margin-bottom: 1.5rem;
-    gap: 1rem;
+    opacity: 0.8;
 }
 
-.experience-title h3 {
-    font-size: 1.4rem;
+.pillar-card h3 {
+    font-size: 1.3rem;
     font-weight: 600;
+    margin-bottom: 1rem;
     color: var(--text-primary);
-    margin-bottom: 0.25rem;
 }
 
-.experience-title h4 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--accent);
-}
-
-.experience-meta {
-    text-align: right;
-    flex-shrink: 0;
-}
-
-.experience-meta .location {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.25rem;
-}
-
-.experience-meta .dates {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    font-weight: 500;
-}
-
-.experience-bullets {
-    list-style: none;
-    margin-bottom: 1.5rem;
-}
-
-.experience-bullets li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.75rem;
+.pillar-card p {
     color: var(--text-secondary);
     line-height: 1.6;
-}
-
-.experience-bullets li::before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-weight: bold;
-}
-
-.skills-gained {
-    padding: 1rem;
-    background: rgba(59, 130, 246, 0.05);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    border-radius: 8px;
-    font-size: 0.9rem;
-}
-
-.skills-gained strong {
-    color: var(--text-primary);
-    margin-right: 0.5rem;
-}
-
-.skills-gained {
-    color: var(--text-secondary);
 }
 
 /* Projects Section */
@@ -749,18 +735,13 @@ body {
         text-align: center;
     }
     
-    .experience-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
+    .pillars-acronym {
+        gap: 1rem;
     }
     
-    .experience-meta {
-        text-align: left;
-    }
-    
-    .experience-item {
-        padding: 1.5rem;
+    .pillars-acronym span {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
     }
     
     .projects-grid {
