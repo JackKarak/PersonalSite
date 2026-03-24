@@ -1,0 +1,22 @@
+{
+  "name": "jack-karakashian-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static portfolio site quality checks",
+  "scripts": {
+    "serve:test": "http-server . -p 4173 -s -c-1",
+    "lint:html": "htmlhint index.html",
+    "lint:css": "stylelint styles.css",
+    "lint": "npm run lint:html && npm run lint:css",
+    "a11y": "start-server-and-test \"npm run serve:test\" http://127.0.0.1:4173 \"axe http://127.0.0.1:4173/index.html\"",
+    "check": "npm run lint && npm run a11y"
+  },
+  "devDependencies": {
+    "@axe-core/cli": "^4.11.1",
+    "htmlhint": "^1.6.3",
+    "http-server": "^14.1.1",
+    "start-server-and-test": "^2.1.2",
+    "stylelint": "^16.15.0",
+    "stylelint-config-recommended": "^15.0.0"
+  }
+}

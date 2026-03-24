@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jack Karakashian - Portfolio</title>
     
     <!-- SEO Meta Tags -->
@@ -18,19 +17,19 @@
     <meta property="og:description" content="Finance and Information Systems student at UMD. Building innovative, data-driven solutions that solve real-world problems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jackkarak.github.io/PersonalSite/">
-    <meta property="og:image" content="https://jackkarak.github.io/PersonalSite/images/Headshot.jpeg">
+    <meta property="og:image" content="https://jackkarak.github.io/PersonalSite/assets/images/Headshot.jpeg">
     <meta property="og:site_name" content="Jack Karakashian Portfolio">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jack Karakashian - Portfolio">
     <meta name="twitter:description" content="Finance and Information Systems student at UMD. Building innovative, data-driven solutions.">
-    <meta name="twitter:image" content="https://jackkarak.github.io/PersonalSite/images/Headshot.jpeg">
+    <meta name="twitter:image" content="https://jackkarak.github.io/PersonalSite/assets/images/Headshot.jpeg">
     
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome for Social Media Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -39,6 +38,10 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">JK</a>
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+                <span class="theme-toggle-dot" aria-hidden="true"></span>
+                <span class="theme-toggle-text">Dark Mode On</span>
+            </button>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -54,6 +57,7 @@
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
@@ -72,7 +76,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-container">
                 <div class="about-image">
-                    <img src="images/Headshot.jpeg" alt="Headshot of Jack" class="about-headshot">
+                    <img src="assets/images/Headshot.jpeg" alt="Headshot of Jack" class="about-headshot">
                 </div>
                 <div class="about-text">
                     <p>I’m Jack Karakashian — builder, problem-solver, and strategist. I design systems that move people, not just data.</p>
@@ -87,21 +91,21 @@
     <!-- Company Banner -->
     <div class="company-banner">
         <div class="scrolling-companies">
-            <img src="moving-banner/weagle.jpg" alt="University of Maryland" />
-            <img src="moving-banner/MSE.jpg" alt="MSE" />
-            <img src="moving-banner/questlogo.jpg" alt="Quest" />
-            <img src="moving-banner/DSP.jpg" alt="Delta Sig" />
-            <img src="moving-banner/recwell.jpg" alt="RecWell" />
-            <img src="moving-banner/lakewood.jpg" alt="Lakewood" />
-            <img src="moving-banner/smokey-glen-farm.png" alt="Smokey Glen Farm" />
+            <img src="assets/banner/weagle.jpg" alt="University of Maryland" />
+            <img src="assets/banner/MSE.jpg" alt="MSE" />
+            <img src="assets/banner/questlogo.jpg" alt="Quest" />
+            <img src="assets/banner/DSP.jpg" alt="Delta Sig" />
+            <img src="assets/banner/recwell.jpg" alt="RecWell" />
+            <img src="assets/banner/lakewood.jpg" alt="Lakewood" />
+            <img src="assets/banner/smokey-glen-farm.png" alt="Smokey Glen Farm" />
             <!-- Repeat for seamless scrolling -->
-            <img src="moving-banner/weagle.jpg" alt="University of Maryland" />
-            <img src="moving-banner/MSE.jpg" alt="MSE" />
-            <img src="moving-banner/questlogo.jpg" alt="Quest" />
-            <img src="moving-banner/DSP.jpg" alt="Delta Sig" />
-            <img src="moving-banner/recwell.jpg" alt="RecWell" />
-            <img src="moving-banner/lakewood.jpg" alt="Lakewood" />
-            <img src="moving-banner/smokey-glen-farm.png" alt="Smokey Glen Farm" />
+            <img src="assets/banner/weagle.jpg" alt="University of Maryland" />
+            <img src="assets/banner/MSE.jpg" alt="MSE" />
+            <img src="assets/banner/questlogo.jpg" alt="Quest" />
+            <img src="assets/banner/DSP.jpg" alt="Delta Sig" />
+            <img src="assets/banner/recwell.jpg" alt="RecWell" />
+            <img src="assets/banner/lakewood.jpg" alt="Lakewood" />
+            <img src="assets/banner/smokey-glen-farm.png" alt="Smokey Glen Farm" />
         </div>
     </div>
 
@@ -123,25 +127,25 @@
             
             <div class="pillars-grid">
                 <div class="pillar-card">
-                    <img src="icons/collab.png" alt="Collaboration Icon" class="pillar-icon">
+                    <img src="assets/icons/collab.png" alt="Collaboration Icon" class="pillar-icon">
                     <h3>Collaboration</h3>
                     <p>Harnessing diverse ideas and perspectives to achieve shared goals. I believe the best solutions emerge when talented people come together, combining their unique strengths to drive meaningful, impactful results.</p>
                 </div>
                 
                 <div class="pillar-card">
-                    <img src="icons/resilience.png" alt="Resilience Icon" class="pillar-icon">
+                    <img src="assets/icons/resilience.png" alt="Resilience Icon" class="pillar-icon">
                     <h3>Resilience</h3>
                     <p>Adapting and persevering through challenges with determination and a positive mindset. Every setback is an opportunity to learn, grow, and emerge stronger than before.</p>
                 </div>
                 
                 <div class="pillar-card">
-                    <img src="icons/adaptability.png" alt="Analytical Icon" class="pillar-icon">
+                    <img src="assets/icons/adaptability.png" alt="Analytical Icon" class="pillar-icon">
                     <h3>Analytical</h3>
                     <p>Breaking down complex problems into actionable insights through data-driven thinking and systematic analysis. I leverage quantitative methods, research, and strategic reasoning to uncover patterns, identify opportunities, and drive informed decision-making.</p>
                 </div>
                 
                 <div class="pillar-card">
-                    <img src="icons/professionalism.png" alt="Professionalism Icon" class="pillar-icon">
+                    <img src="assets/icons/professionalism.png" alt="Professionalism Icon" class="pillar-icon">
                     <h3>Professionalism</h3>
                     <p>Demonstrating integrity, accountability, and respect in every interaction and endeavor. I believe that how you do anything is how you do everything—excellence is a habit, not an accident.</p>
                 </div>
@@ -355,7 +359,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="portfolio-pictures/Zoom logo.png" alt="Zoom Strategy Case Study">
+                        <img src="assets/projects/Zoom logo.png" alt="Zoom Strategy Case Study">
                     </div>
                     <div class="project-content">
                         <h3>Zoom Strategy: Case Study</h3>
@@ -365,13 +369,13 @@
                             <span class="tag">Analysis</span>
                             <span class="tag">Porter's 5 Forces</span>
                         </div>
-                        <a href="https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link" class="project-link" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="portfolio-pictures/Montucky.png" alt="Montucky Cold Snacks System">
+                        <img src="assets/projects/Montucky.png" alt="Montucky Cold Snacks System">
                     </div>
                     <div class="project-content">
                         <h3>Distributor & Retail Performance Tracking System</h3>
@@ -381,13 +385,13 @@
                             <span class="tag">Analytics</span>
                             <span class="tag">Retail</span>
                         </div>
-                        <a href="https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link" class="project-link" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="portfolio-pictures/DOD logo.png" alt="DOD Automation Project">
+                        <img src="assets/projects/DOD logo.png" alt="DOD Automation Project">
                     </div>
                     <div class="project-content">
                         <h3>Automating Processes for Parachute Riggers with the DOD</h3>
@@ -397,13 +401,13 @@
                             <span class="tag">ROI Analysis</span>
                             <span class="tag">Government</span>
                         </div>
-                        <a href="https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link" class="project-link" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="portfolio-pictures/DIT logo.png" alt="Fleet Optimization Project">
+                        <img src="assets/projects/DIT logo.png" alt="Fleet Optimization Project">
                     </div>
                     <div class="project-content">
                         <h3>Vehicle Fleet Optimization Analysis</h3>
@@ -413,13 +417,13 @@
                             <span class="tag">Optimization</span>
                             <span class="tag">Fleet Management</span>
                         </div>
-                        <a href="https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link" class="project-link" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="portfolio-pictures/TTB.png" alt="Terrapin Trust BI">
+                        <img src="assets/projects/TTB.png" alt="Terrapin Trust BI">
                     </div>
                     <div class="project-content">
                         <h3>Business Intelligence for Terrapin Trust</h3>
@@ -429,13 +433,13 @@
                             <span class="tag">Tableau</span>
                             <span class="tag">BI</span>
                         </div>
-                        <a href="https://drive.google.com/drive/folders/1GHeEk537_s8d5xRGljpDeKsYRGD1PPZL?usp=sharing" class="project-link" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/1GHeEk537_s8d5xRGljpDeKsYRGD1PPZL?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="portfolio-pictures/OEE.png" alt="Marketing Analytics">
+                        <img src="assets/projects/OEE.png" alt="Marketing Analytics">
                     </div>
                     <div class="project-content">
                         <h3>Marketing Analytics for Office of Executive Education</h3>
@@ -445,13 +449,13 @@
                             <span class="tag">Conversion Optimization</span>
                             <span class="tag">Data Analysis</span>
                         </div>
-                        <a href="https://drive.google.com/drive/folders/1eOKsX-HeDKe2hC3Y-ip0CQ2oE64vO_cO?usp=sharing" class="project-link" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/1eOKsX-HeDKe2hC3Y-ip0CQ2oE64vO_cO?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="portfolio-pictures/obquest.png" alt="Product Development">
+                        <img src="assets/projects/obquest.png" alt="Product Development">
                     </div>
                     <div class="project-content">
                         <h3>Product Development for Cats Tongue Start-Up</h3>
@@ -461,7 +465,7 @@
                             <span class="tag">Market Research</span>
                             <span class="tag">Prototyping</span>
                         </div>
-                        <a href="https://drive.google.com/drive/folders/12bmGuvB6GHR61nFVsv2n167ijOJePdxS?usp=sharing" class="project-link" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/drive/folders/12bmGuvB6GHR61nFVsv2n167ijOJePdxS?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
             </div>
@@ -481,7 +485,7 @@
                         <span class="blog-tag">Travel</span>
                         <span class="blog-tag">Adventure</span>
                     </div>
-                    <a href="Spain log (1).pdf" target="_blank" class="blog-read-more">
+                    <a href="docs/writing/Spain log (1).pdf" target="_blank" rel="noopener noreferrer" class="blog-read-more">
                         <i class="fas fa-file-pdf"></i> Read PDF
                     </a>
                 </article>
@@ -494,7 +498,7 @@
                         <span class="blog-tag">Climate</span>
                         <span class="blog-tag">Policy</span>
                     </div>
-                    <a href="Scholarly Argument Final Draft.pdf" target="_blank" class="blog-read-more">
+                    <a href="docs/writing/Scholarly Argument Final Draft.pdf" target="_blank" rel="noopener noreferrer" class="blog-read-more">
                         <i class="fas fa-file-pdf"></i> Read PDF
                     </a>
                 </article>
@@ -509,7 +513,7 @@
             <div class="resume-content">
                 <p>Download my comprehensive resume to learn more about my background, experience, and qualifications.</p>
                 <div class="resume-actions">
-                    <a href="Jack Karakashian Banking Resume.pdf" download class="resume-download">
+                    <a href="docs/resume/Jack Karakashian Banking Resume.pdf" download class="resume-download">
                         <i class="fas fa-download"></i>
                         Download Resume
                     </a>
@@ -517,7 +521,7 @@
                 <div class="resume-video">
                     <h3>Watch My Resume Video</h3>
                     <video controls>
-                        <source src="resume-video.mp4" type="video/mp4">
+                        <source src="docs/resume/resume-video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -536,13 +540,13 @@
                         <a href="mailto:jack.p.karakashian@gmail.com">jack.p.karakashian@gmail.com</a>
                     </div>
                     <div class="contact-social">
-                        <a href="https://www.linkedin.com/in/jkarakashian" target="_blank" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/jkarakashian" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.instagram.com/kash.jack" target="_blank" aria-label="Instagram">
+                        <a href="https://www.instagram.com/kash.jack" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="mailto:jack.p.karakashian@gmail.com" target="_blank" aria-label="Email">
+                        <a href="mailto:jack.p.karakashian@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -570,6 +574,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
@@ -579,20 +585,67 @@
 
     <!-- JavaScript for smooth scrolling and navbar functionality -->
     <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeStorageKey = 'site-theme';
+
+        const applyTheme = (themeName) => {
+            const isPastel = themeName === 'pastel';
+            document.body.classList.toggle('theme-pastel', isPastel);
+
+            if (themeToggle) {
+                themeToggle.setAttribute('aria-pressed', String(isPastel));
+                const label = themeToggle.querySelector('.theme-toggle-text');
+                if (label) {
+                    label.textContent = isPastel ? 'Dark Mode Off' : 'Dark Mode On';
+                }
+            }
+        };
+
+        let savedTheme = 'default';
+        try {
+            const storedTheme = localStorage.getItem(themeStorageKey);
+            if (storedTheme === 'pastel') {
+                savedTheme = 'pastel';
+            }
+        } catch (error) {
+            savedTheme = 'default';
+        }
+
+        applyTheme(savedTheme);
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const isPastelActive = document.body.classList.contains('theme-pastel');
+                const nextTheme = isPastelActive ? 'default' : 'pastel';
+                applyTheme(nextTheme);
+
+                try {
+                    localStorage.setItem(themeStorageKey, nextTheme);
+                } catch (error) {
+                    // Ignore storage failures in restricted browsing contexts.
+                }
+            });
+        }
+
         // Mobile menu toggle
         const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        
-        mobileMenuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuToggle.classList.toggle('active');
-        });
-        
+        const navLinksMenu = document.querySelector('.nav-links');
+        const navLinkItems = document.querySelectorAll('.nav-link');
+
+        if (mobileMenuToggle && navLinksMenu) {
+            mobileMenuToggle.addEventListener('click', () => {
+                navLinksMenu.classList.toggle('active');
+                mobileMenuToggle.classList.toggle('active');
+            });
+        }
+
         // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-link').forEach(link => {
+        navLinkItems.forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                mobileMenuToggle.classList.remove('active');
+                if (navLinksMenu && mobileMenuToggle) {
+                    navLinksMenu.classList.remove('active');
+                    mobileMenuToggle.classList.remove('active');
+                }
             });
         });
         
@@ -610,46 +663,58 @@
             });
         });
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+        // Use a single, rAF-throttled scroll handler for navbar and active section state.
+        const navbar = document.querySelector('.navbar');
+        const sections = document.querySelectorAll('section');
 
-        // Active navigation link
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
+        const updateScrollUI = () => {
+            if (navbar) {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
+                if (window.scrollY >= (sectionTop - 200)) {
                     current = section.getAttribute('id');
                 }
             });
 
-            navLinks.forEach(link => {
+            navLinkItems.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${current}`) {
                     link.classList.add('active');
                 }
             });
+        };
+
+        let scrollTicking = false;
+        window.addEventListener('scroll', () => {
+            if (!scrollTicking) {
+                window.requestAnimationFrame(() => {
+                    updateScrollUI();
+                    scrollTicking = false;
+                });
+                scrollTicking = true;
+            }
         });
+
+        // Initialize state once on page load.
+        updateScrollUI();
         
         // Contact form handling
         const contactForm = document.querySelector('.contact-form');
         const submitBtn = document.getElementById('submitBtn');
         const formStatus = document.getElementById('formStatus');
-        const btnText = submitBtn.querySelector('.btn-text');
-        const btnLoader = submitBtn.querySelector('.btn-loader');
-        
-        contactForm.addEventListener('submit', async (e) => {
+        const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+        const btnLoader = submitBtn ? submitBtn.querySelector('.btn-loader') : null;
+
+        if (contactForm && submitBtn && formStatus && btnText && btnLoader) {
+            contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             
             // Show loading state
@@ -685,7 +750,8 @@
                 btnText.style.display = 'inline';
                 btnLoader.style.display = 'none';
             }
-        });
+            });
+        }
     </script>
 </body>
 </html>
