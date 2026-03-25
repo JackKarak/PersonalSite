@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "title": "Zoom Strategy: Case Study",
+      "description": "Applied Porter's Five Forces and strategic analysis to recommend actions that strengthen Zoom's competitive position.",
+      "image": "assets/projects/Zoom logo.png",
+      "imageAlt": "Zoom Strategy Case Study",
+      "link": "https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link",
+      "tags": ["Strategy", "Analysis", "Porter's Five Forces"]
+    },
+    {
+      "title": "Distributor and Retail Performance Tracking System",
+      "description": "Designed a system approach to monitor where and how product is selling for a fast-growing craft beverage brand.",
+      "image": "assets/projects/Montucky.png",
+      "imageAlt": "Montucky Cold Snacks System",
+      "link": "https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link",
+      "tags": ["System Design", "Analytics", "Retail"]
+    },
+    {
+      "title": "Automating Processes for Parachute Riggers with the DOD",
+      "description": "Evaluated four courses of action and delivered an ROI-oriented recommendation for process improvement.",
+      "image": "assets/projects/DOD logo.png",
+      "imageAlt": "DOD Automation Project",
+      "link": "https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link",
+      "tags": ["Process Automation", "ROI Analysis", "Government"]
+    },
+    {
+      "title": "Vehicle Fleet Optimization Analysis",
+      "description": "Used quantitative analysis to optimize fleet sizing and improve operations for the Division of Information Technology.",
+      "image": "assets/projects/DIT logo.png",
+      "imageAlt": "Fleet Optimization Project",
+      "link": "https://drive.google.com/drive/folders/1Pi-FvgItcEKF4mrzcyWJclos0HoB-ZLT?usp=drive_link",
+      "tags": ["Data Analysis", "Optimization", "Fleet Management"]
+    },
+    {
+      "title": "Business Intelligence for Terrapin Trust",
+      "description": "Built MySQL and Tableau-driven reporting workflows to improve account management, agent visibility, and transaction tracking.",
+      "image": "assets/projects/TTB.png",
+      "imageAlt": "Terrapin Trust BI",
+      "link": "https://drive.google.com/drive/folders/1GHeEk537_s8d5xRGljpDeKsYRGD1PPZL?usp=sharing",
+      "tags": ["MySQL", "Tableau", "Business Intelligence"]
+    },
+    {
+      "title": "Marketing Analytics for Office of Executive Education",
+      "description": "Converted enrollment and lead analysis into web and campaign recommendations to improve lead-to-purchase conversion.",
+      "image": "assets/projects/OEE.png",
+      "imageAlt": "Marketing Analytics",
+      "link": "https://drive.google.com/drive/folders/1eOKsX-HeDKe2hC3Y-ip0CQ2oE64vO_cO?usp=sharing",
+      "tags": ["Marketing Analytics", "Conversion Optimization", "Data Analysis"]
+    },
+    {
+      "title": "Product Development for Cats Tongue Start-Up",
+      "description": "Collaborated on market analysis, competitive positioning, and prototype planning for a consumer pet-hair solution concept.",
+      "image": "assets/projects/obquest.png",
+      "imageAlt": "Product Development",
+      "link": "https://drive.google.com/drive/folders/12bmGuvB6GHR61nFVsv2n167ijOJePdxS?usp=sharing",
+      "tags": ["Product Development", "Market Research", "Prototyping"]
+    }
+  ]
+}

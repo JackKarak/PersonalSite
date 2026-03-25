@@ -1,0 +1,145 @@
+{
+  "items": [
+    {
+      "role": "Finance Operations Intern",
+      "organization": "Khanjur Research & Development LLC",
+      "location": "College Park, MD",
+      "dates": "May 2025 - Current",
+      "description": [
+        "Joined a startup focused on advanced shape-memory alloy applications in high-stakes technical environments.",
+        "Built pricing and breakeven models for an $800,000 Department of Defense proposal, including direct and indirect cost analysis.",
+        "Led supplier and vendor research across 10 candidates and delivered strategic recommendations on sourcing and market positioning.",
+        "Strengthened startup execution skills by simplifying complex technical-business problems into actionable operating decisions."
+      ],
+      "skills": [
+        "Financial modeling",
+        "QuickBooks",
+        "Federal contracting",
+        "Strategic analysis",
+        "Budget management"
+      ]
+    },
+    {
+      "role": "Vice President of Chapter Operations",
+      "organization": "Delta Sigma Pi",
+      "location": "College Park, MD",
+      "dates": "December 2024 - Current",
+      "description": [
+        "Led chapter operations, reporting compliance, and process improvements aligned with the Chapter Management Program.",
+        "Designed a point-bucket system to improve member accountability across DEI, wellness, and fundraising pillars.",
+        "Built an automated Excel and VBA audit workflow with real-time point visibility for members.",
+        "Developed a React Native app with TypeScript and Expo to centralize events, attendance, analytics, and chapter resources."
+      ],
+      "skills": [
+        "Automation",
+        "VBA",
+        "React Native",
+        "TypeScript",
+        "Expo",
+        "Supabase",
+        "Strategic operations",
+        "Leadership"
+      ]
+    },
+    {
+      "role": "Caps Crew Member",
+      "organization": "Washington Capitals",
+      "location": "Washington, D.C.",
+      "dates": "August 2024 - May 2025",
+      "description": [
+        "Executed game-day promotions and sponsor activations to support fan engagement for large live audiences.",
+        "Delivered consistent in-game execution and participant management with high operational accuracy."
+      ],
+      "skills": [
+        "Event production",
+        "Crowd engagement",
+        "Logistics",
+        "Live performance",
+        "Brand promotion"
+      ]
+    },
+    {
+      "role": "Founder and President",
+      "organization": "Club Roller Hockey at University of Maryland",
+      "location": "College Park, MD",
+      "dates": "May 2024 - Current",
+      "description": [
+        "Founded and scaled a university roller hockey club with a 30-plus member roster and flexible participation structure.",
+        "Managed sponsorships, budgeting, recruiting, travel logistics, and visibility campaigns to grow competitive presence."
+      ],
+      "skills": [
+        "Leadership",
+        "Recruitment",
+        "Fundraising",
+        "Team building",
+        "Marketing",
+        "Event coordination"
+      ]
+    },
+    {
+      "role": "Weight and Fitness Supervisor",
+      "organization": "University of Maryland Recreation and Wellness",
+      "location": "College Park, MD",
+      "dates": "January 2023 - Current",
+      "description": [
+        "Supervised facility safety and team operations while improving response and incident metrics.",
+        "Authored a consultant-style white paper evaluating policy and operational tradeoffs for staff workout-on-shift proposals."
+      ],
+      "skills": [
+        "Team leadership",
+        "Risk management",
+        "Process improvement",
+        "Research analysis",
+        "Campus wellness"
+      ]
+    },
+    {
+      "role": "Audit Intern",
+      "organization": "GRF CPAs and Advisors",
+      "location": "Bethesda, MD",
+      "dates": "January 2023",
+      "description": [
+        "Performed nonprofit-focused audit support across cash disbursements, payroll, and financial statement review.",
+        "Built foundational audit and reporting knowledge through procedural training and compliance tooling."
+      ],
+      "skills": [
+        "Nonprofit auditing",
+        "Financial analysis",
+        "Accounting research",
+        "Citrix systems"
+      ]
+    },
+    {
+      "role": "Food and Beverage Supervisor",
+      "organization": "Lakewood Country Club",
+      "location": "Rockville, MD",
+      "dates": "Summer 2023",
+      "description": [
+        "Managed snack bar operations, inventory planning, and team coaching in a high-volume member environment.",
+        "Introduced menu and coaching improvements that increased product sales and staff performance confidence."
+      ],
+      "skills": [
+        "Staff training",
+        "Customer experience",
+        "Creative marketing",
+        "Operations management"
+      ]
+    },
+    {
+      "role": "Event Coordination Supervisor",
+      "organization": "Smokey Glen Farm Barbequers",
+      "location": "Gaithersburg, MD",
+      "dates": "May 2019 - August 2022",
+      "description": [
+        "Led event teams of up to 20 staff for gatherings ranging from 20 to 3,000 guests.",
+        "Coordinated staffing, buffet operations, and setup logistics while adapting plans for weather and scale variability."
+      ],
+      "skills": [
+        "Logistics",
+        "Team management",
+        "Event coordination",
+        "Operational efficiency"
+      ]
+    }
+  ]
+}

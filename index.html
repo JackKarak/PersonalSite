@@ -156,7 +156,7 @@
     <section id="experience" class="section">
         <div class="section-content">
             <h2 class="section-title">Experience</h2>
-            <div class="experience-timeline">
+            <div class="experience-timeline" id="experienceTimeline">
                 
                <!-- Internship Spotlight: Khanjur R&D -->
 <div class="experience-item">
@@ -356,7 +356,7 @@
     <section id="projects" class="section">
         <div class="section-content">
             <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
+            <div class="projects-grid" id="projectsGrid">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="assets/projects/Zoom logo.png" alt="Zoom Strategy Case Study">
@@ -626,6 +626,113 @@
                 }
             });
         }
+
+        const escapeHtml = (value) => {
+            const text = value == null ? '' : String(value);
+            return text
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        };
+
+        const safeExternalUrl = (value) => {
+            try {
+                const url = new URL(value);
+                if (url.protocol === 'https:' || url.protocol === 'http:') {
+                    return url.href;
+                }
+            } catch (error) {
+                return '#';
+            }
+            return '#';
+        };
+
+        const renderExperience = (items) => {
+            const experienceTimeline = document.getElementById('experienceTimeline');
+            if (!experienceTimeline || !Array.isArray(items)) {
+                return;
+            }
+
+            experienceTimeline.innerHTML = items.map((item) => {
+                const descriptionParagraphs = Array.isArray(item.description)
+                    ? item.description
+                    : [];
+                const skills = Array.isArray(item.skills) ? item.skills : [];
+
+                return `
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>${escapeHtml(item.role)}</h3>
+                                <h4>${escapeHtml(item.organization)}</h4>
+                            </div>
+                            <div class="experience-meta">
+                                <span class="location">${escapeHtml(item.location)}</span>
+                                <span class="dates">${escapeHtml(item.dates)}</span>
+                            </div>
+                        </div>
+                        <div class="experience-description">
+                            ${descriptionParagraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join('')}
+                        </div>
+                        <div class="skills-gained">
+                            <strong>Skills:</strong> ${escapeHtml(skills.join(', '))}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        };
+
+        const renderProjects = (items) => {
+            const projectsGrid = document.getElementById('projectsGrid');
+            if (!projectsGrid || !Array.isArray(items)) {
+                return;
+            }
+
+            projectsGrid.innerHTML = items.map((item) => {
+                const tags = Array.isArray(item.tags) ? item.tags : [];
+
+                return `
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt || item.title)}">
+                        </div>
+                        <div class="project-content">
+                            <h3>${escapeHtml(item.title)}</h3>
+                            <p>${escapeHtml(item.description)}</p>
+                            <div class="project-tags">
+                                ${tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
+                            </div>
+                            <a href="${safeExternalUrl(item.link)}" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        };
+
+        const loadDynamicContent = async () => {
+            try {
+                const [experienceResponse, projectsResponse] = await Promise.all([
+                    fetch('content/experience.json', { cache: 'no-store' }),
+                    fetch('content/projects.json', { cache: 'no-store' })
+                ]);
+
+                if (!experienceResponse.ok || !projectsResponse.ok) {
+                    return;
+                }
+
+                const experienceData = await experienceResponse.json();
+                const projectsData = await projectsResponse.json();
+
+                renderExperience(experienceData.items);
+                renderProjects(projectsData.items);
+            } catch (error) {
+                // Keep static fallback content if JSON files fail to load.
+            }
+        };
+
+        loadDynamicContent();
 
         // Mobile menu toggle
         const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');

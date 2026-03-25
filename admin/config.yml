@@ -1,0 +1,65 @@
+backend:
+  name: github
+  branch: main
+  repo: JackKarak/PersonalSite
+  # GitHub Pages cannot host this endpoint; use your Vercel app domain.
+  base_url: https://jkarakashianpersonalsite.vercel.app
+  auth_endpoint: /api/begin
+
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: assets/uploads
+public_folder: /assets/uploads
+site_url: https://jackkarak.github.io/PersonalSite/
+display_url: https://jackkarak.github.io/PersonalSite/
+logo_url: /assets/images/Headshot.jpeg
+
+collections:
+  - name: site_content
+    label: Site Content
+    files:
+      - label: Experience
+        name: experience
+        file: content/experience.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Experience Items
+            name: items
+            widget: list
+            summary: "{{fields.role}} | {{fields.organization}}"
+            fields:
+              - { label: Role, name: role, widget: string }
+              - { label: Organization, name: organization, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Dates, name: dates, widget: string }
+              - label: Description Paragraphs
+                name: description
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - label: Skills
+                name: skills
+                widget: list
+                field: { label: Skill, name: skill, widget: string }
+      - label: Projects
+        name: projects
+        file: content/projects.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Project Items
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image Path, name: image, widget: string, hint: "Example: assets/projects/example.png" }
+              - { label: Image Alt, name: imageAlt, widget: string }
+              - { label: Project Link, name: link, widget: string }
+              - label: Tags
+                name: tags
+                widget: list
+                field: { label: Tag, name: tag, widget: string }

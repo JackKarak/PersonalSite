@@ -3,7 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "description": "Static portfolio site quality checks",
+  "dependencies": {
+    "netlify-cms-oauth-provider-node": "^2.0.0"
+  },
   "scripts": {
+    "cms:local": "decap-server",
     "serve:test": "http-server . -p 4173 -s -c-1",
     "lint:html": "htmlhint index.html",
     "lint:css": "stylelint styles.css",
@@ -13,6 +17,7 @@
   },
   "devDependencies": {
     "@axe-core/cli": "^4.11.1",
+    "decap-server": "^3.6.0",
     "htmlhint": "^1.6.3",
     "http-server": "^14.1.1",
     "start-server-and-test": "^2.1.2",
