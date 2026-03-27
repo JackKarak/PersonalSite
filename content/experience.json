@@ -4,12 +4,11 @@
       "role": "Finance Operations Intern",
       "organization": "Khanjur Research & Development LLC",
       "location": "College Park, MD",
-      "dates": "May 2025 - Current",
+      "dates": "May 2025 - August 2025",
       "description": [
-        "Joined a startup focused on advanced shape-memory alloy applications in high-stakes technical environments.",
-        "Built pricing and breakeven models for an $800,000 Department of Defense proposal, including direct and indirect cost analysis.",
-        "Led supplier and vendor research across 10 candidates and delivered strategic recommendations on sourcing and market positioning.",
-        "Strengthened startup execution skills by simplifying complex technical-business problems into actionable operating decisions."
+        "This summer, I joined Khanjur Research & Development, a nimble startup founded by Sabrina Curtis—a trailblazing engineer and expert in Shape Memory Alloys. Khanjur focuses on cutting-edge applications of these materials in actuators, semiconductors, and sputtering technologies. As a small team tackling complex, high-stakes projects, the company embodies adaptability, innovation, and deep technical curiosity—making it the perfect environment to explore the business side of advanced materials.",
+        "My role spanned strategy, pricing, and operations. I led the development of a comprehensive pricing system for an $800,000 proposal submitted to the Department of Defense, incorporating direct and indirect costs, sensitivity analyses, and breakeven modeling that supported a potential capital investment in new manufacturing machinery.\nBeyond financial modeling, I took charge of supplier outreach and vendor due diligence, compiling a side-by-side comparison of 10 companies based on pricing, capabilities, and inspection standards to inform sourcing decisions. I also delivered five strategic briefing reports to company leadership, offering actionable recommendations on market positioning, customer segmentation, and industry trends.\n",
+        "This internship didn’t just deepen my technical and analytical skills—it taught me how to operate within the fast-moving, often ambiguous world of a startup, where business decisions are intertwined with specialized, technical products. I learned to simplify complexity, move quickly, and think holistically about growth."
       ],
       "skills": [
         "Financial modeling",
@@ -20,15 +19,39 @@
       ]
     },
     {
+      "role": "Caps Crew Member",
+      "organization": "Washington Capitals",
+      "location": "Washington, D.C.",
+      "dates": "August 2024 - Current",
+      "description": [
+        "As a lifelong fan of the Washington Capitals, joining the Caps Crew was more than just an internship—it was a full-circle moment. Every home game, I got to help shape the experience for 20,000+ fans, blending showmanship, logistics, and brand engagement into a seamless, electric atmosphere.\n",
+        "Working in Game Presentation, our department owned everything on the Jumbotron outside of actual gameplay. That meant:",
+        "Running live promotions for major sponsors—on the concourse, in the stands, and even on the ice",
+        "Designing skits, setting props, and managing backdrops to enhance sponsor activations and time-out entertainment",
+        "Dressing in costume, waving flags, and performing on cue to build energy and keep fans immersed in the experience",
+        "Over the season, I executed 10+ in-game promotions per night, trained and selected 50+ participants for high-visibility contests, and ensured 100% error-free delivery of each activation. I also used real-time crowd analytics to help adapt our approach on the fly—maximizing fan participation and boosting engagement by over 20% per game.",
+        "Beyond the logistics, this role allowed me to give back to the next generation of fans—helping create unforgettable moments for families, kids, and first-time hockey lovers across the DMV. The Caps gave me memories as a fan; the Caps Crew let me return the favor."
+      ],
+      "skills": [
+        "Event production",
+        "Crowd engagement",
+        "Logistics",
+        "Live performance",
+        "Brand promotion"
+      ]
+    },
+    {
       "role": "Vice President of Chapter Operations",
       "organization": "Delta Sigma Pi",
       "location": "College Park, MD",
       "dates": "December 2024 - Current",
       "description": [
-        "Led chapter operations, reporting compliance, and process improvements aligned with the Chapter Management Program.",
-        "Designed a point-bucket system to improve member accountability across DEI, wellness, and fundraising pillars.",
-        "Built an automated Excel and VBA audit workflow with real-time point visibility for members.",
-        "Developed a React Native app with TypeScript and Expo to centralize events, attendance, analytics, and chapter resources."
+        "As Vice President of Chapter Operations for Delta Sigma Pi, I serve as the logistical and strategic backbone of our chapter—ensuring national reporting compliance, managing internal communications, and driving continuous improvement through the Chapter Management Program (CMP). My role requires balancing structure with innovation, overseeing everything from chapter minutes and officer records to strategic planning and Central Office correspondence.\n",
+        "But my impact didn’t stop with tradition.",
+        "To modernize our operations and reinforce the fraternity’s core pillars—Professionalism, Scholarship, Service, and Brotherhood—I helped design and launch a point bucket system. This initiative moved us beyond raw attendance, encouraging members to stay balanced across areas like DEI, Health & Wellness, and Fundraising.",
+        "To make the system seamless, I engineered a fully automated point-tracking solution in Excel using VBA and advanced formulas. Members could view real-time audits of their points across each bucket—a first for the chapter.",
+        "Taking it a step further, I built a custom mobile app using React Native, TypeScript, and Expo, hosted on GitHub. The app centralizes our operations by:\nSyncing event forms directly to Google Calendar via API\n\nLogging attendance codes to a Supabase backend in real time\n\nDelivering event analytics for officers and admins\n\nProviding easy access to our newsletter, point audit system, and test bank",
+        "This project has not only streamlined internal processes but also helped redefine what accountability and engagement look like in a professional fraternity.\n"
       ],
       "skills": [
         "Automation",
@@ -42,30 +65,16 @@
       ]
     },
     {
-      "role": "Caps Crew Member",
-      "organization": "Washington Capitals",
-      "location": "Washington, D.C.",
-      "dates": "August 2024 - May 2025",
-      "description": [
-        "Executed game-day promotions and sponsor activations to support fan engagement for large live audiences.",
-        "Delivered consistent in-game execution and participant management with high operational accuracy."
-      ],
-      "skills": [
-        "Event production",
-        "Crowd engagement",
-        "Logistics",
-        "Live performance",
-        "Brand promotion"
-      ]
-    },
-    {
       "role": "Founder and President",
       "organization": "Club Roller Hockey at University of Maryland",
       "location": "College Park, MD",
-      "dates": "May 2024 - Current",
+      "dates": "May 2024 - December 2025",
       "description": [
-        "Founded and scaled a university roller hockey club with a 30-plus member roster and flexible participation structure.",
-        "Managed sponsorships, budgeting, recruiting, travel logistics, and visibility campaigns to grow competitive presence."
+        "When my mentee introduced the idea of expanding the National Collegiate Roller Hockey Association (NCRHA) into the Mid-Atlantic, I saw more than just an opportunity to compete—I saw the chance to build something from the ground up. Within three months, we transformed that idea into one of the fastest-growing club sports on campus at the University of Maryland.",
+        "As Founder and President, I:\n\n\nBuilt a 30+ member roster from scratch, leading recruitment, player evaluations, and team structure.\n\nCreated two tiers of participation to ensure flexibility and affordability—supporting both local and national-level play.\n\nServed as captain, developing systems, drawing up plays, and inspiring teammates during practices and tournaments.",
+        "But this wasn’t just about hockey—it was about infrastructure.",
+        "I helped:\n\n\nForm an executive board to lead recruitment, fundraising, and sponsorship outreach.\n\nOpen bank accounts and manage $5K+ in funds, including $2K+ in external sponsorships.\n\nOrganize travel, gear logistics, and scheduling for four tournaments and weekly practices.\n\nLaunch marketing campaigns and social media presence to raise awareness and visibility for roller hockey on campus.",
+        "Starting from zero, we built a competitive, community-oriented program that’s already left a mark on campus—and contributed to diversifying NCRHA’s presence in the region. It’s one of the most fulfilling leadership experiences I’ve had: not just building a team but building a culture that’s here to stay."
       ],
       "skills": [
         "Leadership",
@@ -82,8 +91,10 @@
       "location": "College Park, MD",
       "dates": "January 2023 - Current",
       "description": [
-        "Supervised facility safety and team operations while improving response and incident metrics.",
-        "Authored a consultant-style white paper evaluating policy and operational tradeoffs for staff workout-on-shift proposals."
+        "Since my freshman year, I’ve worked at the University of Maryland’s Recreation and Wellness (RecWell) Center—first as a weight floor attendant, and now as a Weight and Fitness Supervisor. The job is often described as the “lifeguards of the weight room,” but in reality, it’s much more than that.",
+        "Our team is responsible for enforcing safety, policy, and cleanliness standards, all while promoting RecWell’s mission:\n\n                “Inspiring Terps to Be Active and Live Well.”",
+        "We do this not only through presence and enforcement but by being role models and ambassadors of wellness on campus—guiding patrons, supporting events, and fostering a space where fitness feels inclusive and empowering.",
+        "In my current role, I:\n\n\nDirect a 10-person team, streamlining practices and cutting average medical response time by 25%.\n\nLed evaluations for 25+ staff, boosting satisfaction scores by 15% and reducing escalated incidents by 15%.\n\nRedesigned our organization system, optimizing space and ensuring full compliance with gym safety protocols."
       ],
       "skills": [
         "Team leadership",
@@ -99,8 +110,11 @@
       "location": "Bethesda, MD",
       "dates": "January 2023",
       "description": [
-        "Performed nonprofit-focused audit support across cash disbursements, payroll, and financial statement review.",
-        "Built foundational audit and reporting knowledge through procedural training and compliance tooling."
+        "During my internship with GRF CPAs & Advisors, I gained my first exposure to the professional world—joining a team that specializes in audits for nonprofit organizations. GRF plays a vital role in ensuring financial transparency and accountability for mission-driven institutions, from environmental nonprofits like the Chesapeake Bay Foundation to educational and community development groups across the country.",
+        "As an intern, I participated in seminars and workshops that covered audit procedures, nonprofit accounting principles, and the evolving role of CPAs in a post-COVID workplace. I learned how nonprofits differ from for-profit companies—not just in mission and funding, but in how their financials are reported and regulated. I explored this difference further in a research paper on nonprofit vs. for-profit accounting, examining how documents like the statement of activity or Form 990 communicate responsibility to donors rather than shareholders.",
+        "Hands-on, I was able to:\n\n\nAnalyze cash disbursements, receipts, payroll records, and credit card transactions across multiple quarters.\n\nGain experience using Citrix to help my mentor organize and store audit documents within compliance systems.\n\nObserve and absorb how professional relationships and workflows operate in a hybrid, post-COVID office environment",
+        "What made this experience meaningful wasn’t just the technical learning—but also the window into the human side of accounting. I saw how teams collaborate under tight deadlines, how mentorship is built through shared tasks and informal conversation, and how financial accuracy directly supports public trust in community organizations.\n",
+        "This internship solidified my interest in business operations and data integrity—giving me the foundation I needed for future work at the intersection of finance, strategy, and service."
       ],
       "skills": [
         "Nonprofit auditing",
@@ -113,10 +127,14 @@
       "role": "Food and Beverage Supervisor",
       "organization": "Lakewood Country Club",
       "location": "Rockville, MD",
-      "dates": "Summer 2023",
+      "dates": "May 2022 - August 2022; May 2023 - August 2023",
       "description": [
-        "Managed snack bar operations, inventory planning, and team coaching in a high-volume member environment.",
-        "Introduced menu and coaching improvements that increased product sales and staff performance confidence."
+        "At 18, I stepped into a leadership role at Lakewood Country Club, supervising food and beverage operations at the club’s bustling poolside snack bar. With 4–8 staff members under my direction—many in their first job—I was responsible for more than just service; I was responsible for creating structure, setting expectations, and delivering a five-star experience to members of a prestigious club in the Rockville, MD area.\n",
+        "My work covered:\n\n\nOverseeing kitchen expo and service operations, ensuring food quality and fast-paced, accurate order fulfillment.\n\nManaging inventory, conducting daily stock counts, and restocking supplies to keep the kitchen running smoothly.\n\nTraining and mentoring teenage staff, many of whom were 15–17, tailoring feedback and guidance to help them grow and succeed.",
+        "High stakes were the norm. We were under strict timelines—especially during daily camp rushes—and any slip in food quality, sanitation, or timing could have resulted in serious complaints or liability issues. But that pressure also fostered creativity.\n\nTo boost morale and sales, I introduced a custom menu item:\n\nThe “Minion Slushie”—a mix of piña colada and blue raspberry, topped with hand-drawn goggles on each cup.",
+        "Launched during the peak of Minions: The Rise of Gru hype, this fun, themed drink drove a 7x increase in slushie sales, becoming a customer favorite and sparking excitement among the kids and families we served.",
+        "One of the hardest parts of the job was managing peers just a year or two younger than me. To address this, I created a self-evaluation tool to help staff reflect on areas where they felt least confident allowing me to individualize coaching and improve performance without micromanaging.\n",
+        "This job taught me how to lead with empathy and structure, adapt to pressure, and turn creativity into real operational impact."
       ],
       "skills": [
         "Staff training",
@@ -131,8 +149,11 @@
       "location": "Gaithersburg, MD",
       "dates": "May 2019 - August 2022",
       "description": [
-        "Led event teams of up to 20 staff for gatherings ranging from 20 to 3,000 guests.",
-        "Coordinated staffing, buffet operations, and setup logistics while adapting plans for weather and scale variability."
+        "Before college projects, leadership positions, or founding a sports team, I learned what it truly meant to work hard at Smokey Glen Farm—a beloved, family-run institution that’s been delivering unforgettable corporate events and classic BBQ in the D.C. area for over 70 years. It’s where my dad worked when he was my age, and it’s where I started my own professional journey at just 15.",
+        "By 16, I was promoted to Event Coordination Supervisor, trusted to lead a staff of up to 20 and oversee events that hosted anywhere from 20 to 3,000 guests. I was responsible for managing the buffet line, ensuring food was stocked, safe, and ready, which—looking back—was my first taste of inventory management and operational efficiency. It was more than just food; it was about flow, timing, and quality.",
+        "This role taught me logistics the hard way. I set up and locked up events, optimized staffing across teams, adapted plans on the fly during Maryland heatwaves and torrential storms, and worked until 2AM power-washing chicken grease from giant charcoal grates. It wasn’t glamorous—but it was real.",
+        "I didn’t just work in operations—I began to think in systems. Smokey Glen’s deep-rooted traditions sparked my curiosity about how legacy businesses can evolve through innovation. Could processes be automated? Could inventory be digitized? Could staffing schedules be optimized with data? These early questions would later become guiding themes in my business and technology education.",
+        "The job pushed me physically and mentally, and in 2021, I was honored as General Employee of the Year. But the biggest reward was realizing that even in a job rooted in BBQ and backyard games, you can learn some of the most fundamental principles of leadership, resilience, and operational excellence."
       ],
       "skills": [
         "Logistics",
