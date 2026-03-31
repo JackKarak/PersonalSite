@@ -63,3 +63,43 @@ collections:
                 name: tags
                 widget: list
                 field: { label: Tag, name: tag, widget: string }
+      - label: About
+        name: about
+        file: content/about.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: About Paragraphs
+            name: paragraphs
+            widget: list
+            field: { label: Paragraph, name: paragraph, widget: text }
+          - label: Carousel Images
+            name: images
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Alt Text, name: alt, widget: string }
+              - { label: Caption, name: caption, widget: string, required: false }
+      - label: Blog
+        name: blog
+        file: content/blog.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - label: Blog Posts
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Date Label, name: date, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Summary, name: summary, widget: text }
+              - { label: Link URL or Path, name: link, widget: string, hint: "Example: docs/writing/my-post.pdf or https://example.com" }
+              - { label: Link Label, name: linkLabel, widget: string, required: false }
+              - label: Tags
+                name: tags
+                widget: list
+                field: { label: Tag, name: tag, widget: string }

@@ -286,9 +286,28 @@ body {
     position: relative;
 }
 
+.about-carousel {
+    position: relative;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.about-carousel-track {
+    position: relative;
+    min-height: 460px;
+}
+
+.about-slide {
+    display: none;
+}
+
+.about-slide.is-active {
+    display: block;
+}
+
 .about-headshot {
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -298,6 +317,67 @@ body {
 .about-headshot:hover {
     transform: translateY(-10px);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.about-caption {
+    margin-top: 0.75rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.about-carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: rgba(10, 10, 10, 0.65);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: var(--transition);
+}
+
+.about-carousel-control:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.about-carousel-control.prev {
+    left: 0.5rem;
+}
+
+.about-carousel-control.next {
+    right: 0.5rem;
+}
+
+.about-carousel-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.about-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: var(--text-muted);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.about-dot.is-active {
+    background: var(--accent);
+    transform: scale(1.15);
 }
 
 .about-text p {
@@ -1049,6 +1129,16 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+    }
+
+    .about-carousel-track {
+        min-height: 340px;
+    }
+
+    .about-carousel-control {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
     }
     
     .experience-header {

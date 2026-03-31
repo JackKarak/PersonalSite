@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "date": "Summer 2024",
+      "title": "The Spain Log",
+      "summary": "Join me on an epic two-week adventure as we uncover the breathtaking wonders of Spain - from stunning landscapes to rich cultural treasures and unforgettable experiences.",
+      "link": "docs/writing/Spain log (1).pdf",
+      "linkLabel": "Read PDF",
+      "tags": ["Travel", "Adventure"]
+    },
+    {
+      "date": "Spring 2024",
+      "title": "Nuclear Power: A Scholarly Argument",
+      "summary": "Discover the pivotal role of nuclear power, its dominance in energy production, and why it stands as the most critical solution for our climate and future.",
+      "link": "docs/writing/Scholarly Argument Final Draft.pdf",
+      "linkLabel": "Read PDF",
+      "tags": ["Energy", "Climate", "Policy"]
+    }
+  ]
+}

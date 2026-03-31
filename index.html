@@ -51,6 +51,7 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#blog" class="nav-link">Blog</a>
                 <a href="#resume" class="nav-link">Resume</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
@@ -76,9 +77,19 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-container">
                 <div class="about-image">
-                    <img src="assets/images/Headshot.jpeg" alt="Headshot of Jack" class="about-headshot">
+                    <div class="about-carousel" id="aboutCarousel">
+                        <div class="about-carousel-track" id="aboutCarouselTrack">
+                            <figure class="about-slide is-active">
+                                <img src="assets/images/Headshot.jpeg" alt="Headshot of Jack" class="about-headshot">
+                                <figcaption class="about-caption">Jack Karakashian</figcaption>
+                            </figure>
+                        </div>
+                        <button type="button" class="about-carousel-control prev" id="aboutPrev" aria-label="Previous about image">&#10094;</button>
+                        <button type="button" class="about-carousel-control next" id="aboutNext" aria-label="Next about image">&#10095;</button>
+                        <div class="about-carousel-dots" id="aboutCarouselDots" aria-label="About image carousel pagination"></div>
+                    </div>
                 </div>
-                <div class="about-text">
+                <div class="about-text" id="aboutText">
                     <p>I’m Jack Karakashian — builder, problem-solver, and strategist. I design systems that move people, not just data.</p>
                     <p>At the core of everything I do is a belief: the best solutions are the ones that serve. Whether I’m managing projects, leading a startup, or launching student organizations, I focus on creating results that are thoughtful, actionable, and real.</p>
                     <p>I bring a background in Finance and Information Systems, but what defines me is forward motion. I ask big questions. I move quickly. I lead with clarity and care. I believe in staying grounded while aiming high.</p>
@@ -476,7 +487,7 @@
     <section id="blog" class="section">
         <div class="section-content">
             <h2 class="section-title">Blog</h2>
-            <div class="blog-grid">
+            <div class="blog-grid" id="blogGrid">
                 <article class="blog-card">
                     <div class="blog-date">Summer 2024</div>
                     <h3>The Spain Log</h3>
@@ -637,9 +648,14 @@
                 .replace(/'/g, '&#39;');
         };
 
-        const safeExternalUrl = (value) => {
+        const safeLinkUrl = (value) => {
+            const text = value == null ? '' : String(value).trim();
+            if (!text) {
+                return '#';
+            }
+
             try {
-                const url = new URL(value);
+                const url = new URL(text, window.location.href);
                 if (url.protocol === 'https:' || url.protocol === 'http:') {
                     return url.href;
                 }
@@ -684,6 +700,94 @@
             }).join('');
         };
 
+        const renderAbout = (aboutData) => {
+            const aboutTrack = document.getElementById('aboutCarouselTrack');
+            const aboutDots = document.getElementById('aboutCarouselDots');
+            const aboutText = document.getElementById('aboutText');
+            const prevButton = document.getElementById('aboutPrev');
+            const nextButton = document.getElementById('aboutNext');
+
+            if (!aboutTrack || !aboutDots || !aboutText || !aboutData) {
+                return;
+            }
+
+            const images = Array.isArray(aboutData.images)
+                ? aboutData.images.filter((item) => item && item.image)
+                : [];
+            const paragraphs = Array.isArray(aboutData.paragraphs)
+                ? aboutData.paragraphs.filter((item) => typeof item === 'string' && item.trim())
+                : [];
+
+            if (paragraphs.length > 0) {
+                aboutText.innerHTML = paragraphs
+                    .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+                    .join('');
+            }
+
+            if (images.length === 0) {
+                return;
+            }
+
+            aboutTrack.innerHTML = images.map((item, index) => {
+                const captionText = item.caption ? `<figcaption class="about-caption">${escapeHtml(item.caption)}</figcaption>` : '';
+                return `
+                    <figure class="about-slide${index === 0 ? ' is-active' : ''}" data-slide-index="${index}">
+                        <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.alt || 'About image')}" class="about-headshot">
+                        ${captionText}
+                    </figure>
+                `;
+            }).join('');
+
+            aboutDots.innerHTML = images.map((item, index) => `
+                <button
+                    type="button"
+                    class="about-dot${index === 0 ? ' is-active' : ''}"
+                    data-slide="${index}"
+                    aria-label="Go to about image ${index + 1}"
+                    aria-current="${index === 0 ? 'true' : 'false'}"
+                ></button>
+            `).join('');
+
+            const slides = Array.from(aboutTrack.querySelectorAll('.about-slide'));
+            const dots = Array.from(aboutDots.querySelectorAll('.about-dot'));
+            let activeIndex = 0;
+
+            const setActiveSlide = (index) => {
+                activeIndex = (index + slides.length) % slides.length;
+
+                slides.forEach((slide, slideIndex) => {
+                    slide.classList.toggle('is-active', slideIndex === activeIndex);
+                });
+
+                dots.forEach((dot, dotIndex) => {
+                    const isActive = dotIndex === activeIndex;
+                    dot.classList.toggle('is-active', isActive);
+                    dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+                });
+            };
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    setActiveSlide(index);
+                });
+            });
+
+            if (prevButton && nextButton) {
+                if (slides.length < 2) {
+                    prevButton.style.display = 'none';
+                    nextButton.style.display = 'none';
+                    aboutDots.style.display = 'none';
+                } else {
+                    prevButton.style.display = 'flex';
+                    nextButton.style.display = 'flex';
+                    aboutDots.style.display = 'flex';
+
+                    prevButton.onclick = () => setActiveSlide(activeIndex - 1);
+                    nextButton.onclick = () => setActiveSlide(activeIndex + 1);
+                }
+            }
+        };
+
         const renderProjects = (items) => {
             const projectsGrid = document.getElementById('projectsGrid');
             if (!projectsGrid || !Array.isArray(items)) {
@@ -704,29 +808,71 @@
                             <div class="project-tags">
                                 ${tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
                             </div>
-                            <a href="${safeExternalUrl(item.link)}" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                            <a href="${safeLinkUrl(item.link)}" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                     </div>
                 `;
             }).join('');
         };
 
+        const renderBlog = (items) => {
+            const blogGrid = document.getElementById('blogGrid');
+            if (!blogGrid || !Array.isArray(items)) {
+                return;
+            }
+
+            blogGrid.innerHTML = items.map((item) => {
+                const tags = Array.isArray(item.tags) ? item.tags : [];
+                const linkLabel = item.linkLabel ? item.linkLabel : 'Read More';
+
+                return `
+                    <article class="blog-card">
+                        <div class="blog-date">${escapeHtml(item.date)}</div>
+                        <h3>${escapeHtml(item.title)}</h3>
+                        <p>${escapeHtml(item.summary)}</p>
+                        <div class="blog-meta">
+                            ${tags.map((tag) => `<span class="blog-tag">${escapeHtml(tag)}</span>`).join('')}
+                        </div>
+                        <a href="${safeLinkUrl(item.link)}" target="_blank" rel="noopener noreferrer" class="blog-read-more">
+                            <i class="fas fa-arrow-right"></i> ${escapeHtml(linkLabel)}
+                        </a>
+                    </article>
+                `;
+            }).join('');
+        };
+
+        const fetchJson = async (path) => {
+            const response = await fetch(path, { cache: 'no-store' });
+            if (!response.ok) {
+                return null;
+            }
+            return response.json();
+        };
+
         const loadDynamicContent = async () => {
             try {
-                const [experienceResponse, projectsResponse] = await Promise.all([
-                    fetch('content/experience.json', { cache: 'no-store' }),
-                    fetch('content/projects.json', { cache: 'no-store' })
+                const [experienceData, projectsData, aboutData, blogData] = await Promise.all([
+                    fetchJson('content/experience.json'),
+                    fetchJson('content/projects.json'),
+                    fetchJson('content/about.json'),
+                    fetchJson('content/blog.json')
                 ]);
 
-                if (!experienceResponse.ok || !projectsResponse.ok) {
-                    return;
+                if (experienceData && Array.isArray(experienceData.items)) {
+                    renderExperience(experienceData.items);
                 }
 
-                const experienceData = await experienceResponse.json();
-                const projectsData = await projectsResponse.json();
+                if (projectsData && Array.isArray(projectsData.items)) {
+                    renderProjects(projectsData.items);
+                }
 
-                renderExperience(experienceData.items);
-                renderProjects(projectsData.items);
+                if (aboutData) {
+                    renderAbout(aboutData);
+                }
+
+                if (blogData && Array.isArray(blogData.items)) {
+                    renderBlog(blogData.items);
+                }
             } catch (error) {
                 // Keep static fallback content if JSON files fail to load.
             }
